@@ -1,16 +1,105 @@
-# flutter_positive_affirmation
+## 프로젝트 개요
 
-A new Flutter project.
+이 프로젝트는 Cursor ai를 활용하여 개발된 긍정 확언 모바일 애플리케이션입니다. 사용자가 자신만의 긍정 확언 문장을 추가하고 관리할 수 있으며, 직접 녹음한 음성으로 확언을 들을 수 있는 기능을 제공합니다.
 
-## Getting Started
+## 주요 기능
 
-This project is a starting point for a Flutter application.
+1. 긍정 확언 문장 관리
+2. 음성 녹음 및 재생
+3. 카테고리별 확언 관리
+4. 알림 설정
+5. 사용자 프로필 관리
 
-A few resources to get you started if this is your first Flutter project:
+## UX/UI 가이드라인
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- 전체적으로 밝고 긍정적인 색상 팔레트 사용 (예: 파스텔 톤)
+- 직관적이고 간단한 네비게이션 구조
+- 최소한의 클릭으로 주요 기능에 접근 가능한 레이아웃
+- 부드러운 애니메이션과 전환 효과 적용
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+## 화면 구성
+
+### 1. 홈 화면
+
+- 오늘의 긍정 확언 표시
+- 최근 추가된 확언 목록
+- 빠른 녹음 버튼
+
+
+### 2. 확언 목록 화면
+
+- 카테고리별 탭 구조
+- 각 확언 항목에 재생/편집/삭제 옵션
+- 새 확언 추가 버튼
+
+
+### 3. 녹음 화면
+
+- 텍스트 입력 필드
+- 녹음 시작/중지 버튼
+- 미리 듣기 옵션
+- 저장 및 취소 버튼
+
+
+### 4. 설정 화면
+
+- 알림 설정 (시간, 빈도)
+- 프로필 정보 관리
+- 앱 테마 설정
+
+
+## 기술 스택
+
+- 프레임워크: Flutter
+- 프로그래밍 언어: Dart
+- 상태 관리: Provider 또는 Riverpod
+- 음성 녹음 및 재생: flutter_sound 패키지
+- 로컬 데이터베이스
+
+
+## 개발 단계
+
+1. 프로젝트 설정 및 기본 구조 구현
+2. UI 컴포넌트 개발
+3. 로컬 데이터베이스 연동
+4. 음성 녹음 및 재생 기능 구현
+5. 상태 관리 및 비즈니스 로직 구현
+6. 테스트 및 디버깅
+7. 성능 최적화
+8. 출시 준비 (앱 스토어 등록 등)
+
+## 세부 기능 요구사항
+
+### 1. 긍정 확언 문장 관리
+
+- 텍스트 기반 확언 추가/편집/삭제
+- 카테고리 지정 및 관리
+- 즐겨찾기 기능
+
+
+### 2. 음성 녹음 및 재생
+
+- 고품질 음성 녹음 (MP3 또는 AAC 형식)
+- 배경 음악 옵션 (선택적)
+- 음성 재생 시 텍스트 동기화 표시
+
+
+### 3. 카테고리별 확언 관리
+
+- 기본 카테고리 제공 (자신감, 성공, 건강 등)
+- 사용자 정의 카테고리 생성 기능
+
+
+### 4. 알림 설정
+
+- 일일 알림 시간 설정
+- 알림 빈도 조절 (하루 1회 ~ 5회)
+- 랜덤 확언 선택 옵션
+
+
+### 5. 사용자 프로필 관리
+
+- 기본 정보 설정 (이름, 프로필 사진)
+- 목표 설정 및 진행 상황 추적
+
